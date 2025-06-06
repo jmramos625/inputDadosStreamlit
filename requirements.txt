@@ -1,2 +1,2 @@
-mysqlclient
 mysql-connector-python
+streamlit
