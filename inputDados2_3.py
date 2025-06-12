@@ -16,6 +16,14 @@ def get_connection():
         port=3306  # or your actual port
     )
 
+# Configuração de Aba de título
+st.set_page_config(
+    page_title="Nbs_Recape (TESTE)",        # Título da aba
+    page_icon="🌐",                       # Ícone da aba (pode ser emoji ou URL para imagem)
+    layout="wide",                        # Opcional: pode ser "centered" ou "wide"
+    initial_sidebar_state="auto",         # Opcional: "auto", "expanded", "collapsed"
+)
+
 # Connect to DB
 conn = get_connection()
 cursor = conn.cursor()
